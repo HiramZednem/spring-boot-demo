@@ -1,4 +1,4 @@
-package com.codqueto.springboot_demo;
+package com.codqueto;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
