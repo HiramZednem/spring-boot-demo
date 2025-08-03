@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringbootDemoApplication implements CommandLineRunner {
 
-	@Autowired
-	GauntletService gauntletService;
+//	@Autowired
+//	GauntletService gauntletService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootDemoApplication.class, args);
@@ -18,6 +18,6 @@ public class SpringbootDemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		gauntletService.useFullPower();
+//		gauntletService.useFullPower();
 	}
 }

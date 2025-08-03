@@ -13,7 +13,6 @@ import java.io.Serializable;
 @Setter
 @EqualsAndHashCode
 @ToString
-@Log
 public abstract class Stone implements Serializable
 {
 
@@ -37,6 +36,6 @@ public abstract class Stone implements Serializable
     public abstract void usePower();
 
     public void clear() {
-        log.info("Cleaning stone");
+//        log.info("Cleaning stone");
     }
 }
