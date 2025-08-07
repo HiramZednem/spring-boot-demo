@@ -1,0 +1,2 @@
+2025-08-06T10:10:39.147-06:00  INFO 37604 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T10:10:41.241-06:00  INFO 37604 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
