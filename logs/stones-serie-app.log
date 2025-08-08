@@ -1,0 +1,256 @@
+2025-08-07T23:05:05.166-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:05:05.168-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:05:05.750-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T23:05:05.750-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T23:05:05.764-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring embedded WebApplicationContext
+2025-08-07T23:05:05.939-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 1.039 seconds (process running for 1.556)
+2025-08-07T23:06:00.703-06:00  INFO 69329 --- [springboot-demo] [http-nio-8082-exec-5] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07T23:17:44.487-06:00 ERROR 69329 --- [springboot-demo] [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-07T23:17:44.619-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:17:44.619-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:17:44.673-06:00  WARN 69329 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+2025-08-07T23:17:44.684-06:00 ERROR 69329 --- [springboot-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:57) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:243) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:228) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:419) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.codqueto.SpringbootDemoApplication.main(SpringbootDemoApplication.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+
+2025-08-07T23:17:46.137-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:17:46.137-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:17:46.206-06:00  WARN 69329 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+2025-08-07T23:17:46.209-06:00 ERROR 69329 --- [springboot-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:57) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:243) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:228) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:419) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.codqueto.SpringbootDemoApplication.main(SpringbootDemoApplication.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+
+2025-08-07T23:18:57.704-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:18:57.704-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:18:57.759-06:00  WARN 69329 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+2025-08-07T23:18:57.761-06:00 ERROR 69329 --- [springboot-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:57) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:243) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:228) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:419) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.codqueto.SpringbootDemoApplication.main(SpringbootDemoApplication.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+
+2025-08-07T23:20:14.913-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:20:14.913-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:20:15.009-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T23:20:15.009-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T23:20:15.015-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring embedded WebApplicationContext
+2025-08-07T23:20:15.032-06:00  WARN 69329 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootDemoApplication': Unsatisfied dependency expressed through field 'powerStone': No qualifying bean of type 'com.codqueto.models.Stone' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier("power")}
+2025-08-07T23:20:15.033-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-07T23:20:15.038-06:00 ERROR 69329 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field powerStone in com.codqueto.SpringbootDemoApplication required a bean of type 'com.codqueto.models.Stone' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+	- @org.springframework.beans.factory.annotation.Qualifier("power")
+
+
+Action:
+
+Consider defining a bean of type 'com.codqueto.models.Stone' in your configuration.
+
+2025-08-07T23:21:47.393-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:21:47.393-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:21:47.445-06:00  WARN 69329 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+2025-08-07T23:21:47.447-06:00 ERROR 69329 --- [springboot-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:57) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:243) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:228) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:419) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.codqueto.SpringbootDemoApplication.main(SpringbootDemoApplication.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+
+2025-08-07T23:22:00.411-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:22:00.411-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:22:00.467-06:00  WARN 69329 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+2025-08-07T23:22:00.469-06:00 ERROR 69329 --- [springboot-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'init' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/codqueto/configs/StonesConfigs.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:57) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:243) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:228) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:419) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.codqueto.SpringbootDemoApplication.main(SpringbootDemoApplication.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+
+2025-08-07T23:22:09.993-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69329 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:22:09.993-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:22:10.084-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T23:22:10.084-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T23:22:10.087-06:00  INFO 69329 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring embedded WebApplicationContext
+2025-08-07T23:22:10.144-06:00  INFO 69329 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.168 seconds (process running for 1025.799)
+2025-08-07T23:22:50.629-06:00  INFO 69710 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69710 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:22:50.630-06:00  INFO 69710 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:22:51.058-06:00  INFO 69710 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T23:22:51.058-06:00  INFO 69710 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T23:22:51.072-06:00  INFO 69710 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring embedded WebApplicationContext
+2025-08-07T23:22:51.111-06:00  INFO 69710 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: ${subtitles.url profile: movie
+2025-08-07T23:22:51.249-06:00  INFO 69710 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.927 seconds (process running for 1.552)
+2025-08-07T23:23:55.915-06:00  INFO 69738 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69738 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:23:55.916-06:00  INFO 69738 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:23:56.289-06:00  INFO 69738 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T23:23:56.290-06:00  INFO 69738 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T23:23:56.302-06:00  INFO 69738 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring embedded WebApplicationContext
+2025-08-07T23:23:56.334-06:00  INFO 69738 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: movie
+2025-08-07T23:23:56.458-06:00  INFO 69738 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.746 seconds (process running for 1.057)
+2025-08-07T23:27:06.682-06:00  INFO 69802 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69802 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:27:06.683-06:00  INFO 69802 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:27:06.848-06:00  WARN 69802 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'mind' defined in class path resource [com/codqueto/configs/StonesConfigsMovie.class]: Cannot register bean definition [Root bean: class=null; scope=prototype; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=stonesConfigsMovie; factoryMethodName=mindStone; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/codqueto/configs/StonesConfigsMovie.class]] for bean 'mind' since there is already [Root bean: class=null; scope=prototype; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=stonesConfigs; factoryMethodName=mindStone; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/codqueto/configs/StonesConfigs.class]] bound.
+2025-08-07T23:27:06.861-06:00 ERROR 69802 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'mind', defined in class path resource [com/codqueto/configs/StonesConfigsMovie.class], could not be registered. A bean with that name has already been defined in class path resource [com/codqueto/configs/StonesConfigs.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-08-07T23:28:10.852-06:00  INFO 69819 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69819 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:28:10.853-06:00  INFO 69819 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:28:11.019-06:00  WARN 69819 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'mind' defined in class path resource [com/codqueto/configs/StonesConfigsMovie.class]: Cannot register bean definition [Root bean: class=null; scope=prototype; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=stonesConfigsMovie; factoryMethodName=mindStone; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/codqueto/configs/StonesConfigsMovie.class]] for bean 'mind' since there is already [Root bean: class=null; scope=prototype; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=stonesConfigs; factoryMethodName=mindStone; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/codqueto/configs/StonesConfigs.class]] bound.
+2025-08-07T23:28:11.032-06:00 ERROR 69819 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'mind', defined in class path resource [com/codqueto/configs/StonesConfigsMovie.class], could not be registered. A bean with that name has already been defined in class path resource [com/codqueto/configs/StonesConfigs.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-08-07T23:34:07.921-06:00  INFO 69911 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 69911 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T23:34:07.923-06:00  INFO 69911 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : The following 1 profile is active: "movie"
+2025-08-07T23:34:07.946-06:00  INFO 69911 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07T23:34:07.946-06:00  INFO 69911 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07T23:34:08.313-06:00  INFO 69911 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-08-07T23:34:08.319-06:00  INFO 69911 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T23:34:08.319-06:00  INFO 69911 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T23:34:08.331-06:00  INFO 69911 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/movie-stones]  : Initializing Spring embedded WebApplicationContext
+2025-08-07T23:34:08.331-06:00  INFO 69911 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 384 ms
+2025-08-07T23:34:08.364-06:00  INFO 69911 --- [springboot-demo] [restartedMain] c.codqueto.configs.StonesConfigsMovie    : Loading subtitles: movie.xyz profile: movie
+2025-08-07T23:34:08.470-06:00  INFO 69911 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-07T23:34:08.484-06:00  INFO 69911 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/movie-stones'
+2025-08-07T23:34:08.489-06:00  INFO 69911 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.803 seconds (process running for 1.137)

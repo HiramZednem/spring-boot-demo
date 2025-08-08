@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Scope;
 
 @Slf4j
 @Configuration
-@Profile("default")
+@Profile("serie")
 @PropertySources({
         @PropertySource("classpath:/configs/mind_stone.properties"),
         @PropertySource("classpath:/configs/power_stone.properties"),
@@ -28,9 +28,9 @@ import org.springframework.context.annotation.Scope;
         @PropertySource("classpath:/configs/soul_stone.properties"),
         @PropertySource("classpath:/configs/space_stone.properties"),
         @PropertySource("classpath:/configs/time_stone.properties"),
-        @PropertySource("classpath:/configs/stone.properties"),
+        @PropertySource("classpath:/configs/stone-serie.properties"),
 })
-public class StonesConfigs {
+public class StonesConfigsSerie {
 
     @Value("${subtitles.url}") private String subtitleUrl;
     @Value("${spring.profiles.active:default}") private String profile;
