@@ -13,13 +13,8 @@ import java.io.ObjectOutputStream;
 @ToString(callSuper = true)
 public class TimeStone extends Stone{
 
-    private static final String COLOR = "Green";
-    private static final String NAME = "Time Stone";
-    private static final String LOCATION = "Agamotto";
-    private static final int ENERGY_LEVEL = 9;
-
-    public TimeStone() {
-        super(COLOR, NAME, LOCATION, ENERGY_LEVEL);
+    public TimeStone(String color, String name, String location, Integer energyLevel) {
+        super(color, name, location, energyLevel);
     }
 
     @Override

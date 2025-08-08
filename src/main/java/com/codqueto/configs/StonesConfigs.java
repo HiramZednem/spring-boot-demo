@@ -35,7 +35,6 @@ public class StonesConfigs {
     @Value("${stones.mind.energy_level}")
     private Integer mindEnergy;
 
-
     @Bean("mind")
     @Scope("prototype")
     @ConditionalOnProperty(
@@ -46,6 +45,15 @@ public class StonesConfigs {
         return new MindStone(mindColor, mindName, mindLocation, mindEnergy);
     }
 
+    @Value("${stones.power.color}")
+    private String powerColor;
+    @Value("${stones.power.name}")
+    private String powerName;
+    @Value("${stones.power.location}")
+    private String powerLocation;
+    @Value("${stones.power.energy_level}")
+    private Integer powerEnergy;
+
     @Bean("power")
     @Scope("prototype")
     @ConditionalOnProperty(
@@ -53,8 +61,17 @@ public class StonesConfigs {
             havingValue = "true"
     )
     public PowerStone PowerStone() {
-        return new PowerStone();
+        return new PowerStone(powerColor, powerName, powerLocation, powerEnergy);
     }
+
+    @Value("${stones.reality.color}")
+    private String realityColor;
+    @Value("${stones.reality.name}")
+    private String realityName;
+    @Value("${stones.reality.location}")
+    private String realityLocation;
+    @Value("${stones.reality.energy_level}")
+    private Integer realityEnergy;
 
     @Bean("reality")
     @Scope("prototype")
@@ -63,8 +80,17 @@ public class StonesConfigs {
             havingValue = "true"
     )
     public RealityStone RealityStone() {
-        return new RealityStone();
+        return new RealityStone(realityColor,realityName,realityLocation,realityEnergy);
     }
+
+    @Value("${stones.soul.color}")
+    private String soulColor;
+    @Value("${stones.soul.name}")
+    private String soulName;
+    @Value("${stones.soul.location}")
+    private String soulLocation;
+    @Value("${stones.soul.energy_level}")
+    private Integer soulEnergy;
 
     @Bean("soul")
     @Scope("prototype")
@@ -73,8 +99,17 @@ public class StonesConfigs {
             havingValue = "true"
     )
     public SoulStone soulStone() {
-        return new SoulStone();
+        return new SoulStone(soulColor,soulName,soulLocation,soulEnergy);
     }
+
+    @Value("${stones.space.color}")
+    private String spaceColor;
+    @Value("${stones.space.name}")
+    private String spaceName;
+    @Value("${stones.space.location}")
+    private String spaceLocation;
+    @Value("${stones.space.energy_level}")
+    private Integer spaceEnergy;
 
     @Bean("space")
     @Scope("prototype")
@@ -83,8 +118,17 @@ public class StonesConfigs {
             havingValue = "true"
     )
     public SpaceStone spaceStone() {
-        return new SpaceStone();
+        return new SpaceStone(spaceColor,spaceName,spaceLocation,spaceEnergy);
     }
+
+    @Value("${stones.time.color}")
+    private String timeColor;
+    @Value("${stones.time.name}")
+    private String timeName;
+    @Value("${stones.time.location}")
+    private String timeLocation;
+    @Value("${stones.time.energy_level}")
+    private Integer timeEnergy;
 
     @Bean("time")
     @Scope("prototype")
@@ -93,7 +137,7 @@ public class StonesConfigs {
             havingValue = "true"
     )
     public TimeStone timeStone() {
-        return new TimeStone();
+        return new TimeStone(timeColor,timeName,timeLocation,timeEnergy);
     }
 }
 

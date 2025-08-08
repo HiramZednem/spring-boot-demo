@@ -1,2 +1,12 @@
-2025-08-06T10:10:39.147-06:00  INFO 37604 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-06T10:10:41.241-06:00  INFO 37604 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-07T22:43:03.860-06:00  INFO 68423 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 68423 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-07T22:43:03.862-06:00  INFO 68423 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-07T22:43:03.881-06:00  INFO 68423 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07T22:43:03.881-06:00  INFO 68423 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07T22:43:04.471-06:00  INFO 68423 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-07T22:43:04.478-06:00  INFO 68423 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-07T22:43:04.479-06:00  INFO 68423 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-07T22:43:04.491-06:00  INFO 68423 --- [springboot-demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-07T22:43:04.491-06:00  INFO 68423 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 609 ms
+2025-08-07T22:43:04.641-06:00  INFO 68423 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-07T22:43:04.662-06:00  INFO 68423 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-08-07T22:43:04.670-06:00  INFO 68423 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 1.129 seconds (process running for 1.852)
