@@ -1,11 +1,18 @@
 package com.codqueto.services;
 
+import com.codqueto.models.MindStone;
+import com.codqueto.models.PowerStone;
+import com.codqueto.models.RealityStone;
+import com.codqueto.models.SoulStone;
+import com.codqueto.models.SpaceStone;
 import com.codqueto.models.Stone;
+import com.codqueto.models.TimeStone;
 import lombok.Getter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +22,14 @@ import java.util.Map;
 @Service
 @Slf4j
 @Getter
+@ConditionalOnBean(value = {
+        MindStone.class,
+        PowerStone.class,
+        RealityStone.class,
+        SoulStone.class,
+        SpaceStone.class,
+        TimeStone.class
+})
 public class GauntletServiceImpl implements GauntletService {
 
     private final Stone mindStone;

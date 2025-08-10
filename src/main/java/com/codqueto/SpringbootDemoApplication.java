@@ -1,5 +1,6 @@
 package com.codqueto;
 
+import com.codqueto.components.Thanos;
 import com.codqueto.models.PowerStone;
 import com.codqueto.models.Stone;
 import com.codqueto.services.GauntletService;
@@ -13,6 +14,9 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 public class SpringbootDemoApplication implements CommandLineRunner {
+
+	@Autowired
+	private Thanos thanos;
 
 	@Value(value="${spring.not.found:default-value}")
 	private String value;
@@ -34,8 +38,9 @@ public class SpringbootDemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println(powerStone);
-		System.out.println(mindStone);
-		System.out.println(realityStone);
+//		System.out.println(powerStone);
+//		System.out.println(mindStone);
+//		System.out.println(realityStone);
+		thanos.snap();
 	}
 }
