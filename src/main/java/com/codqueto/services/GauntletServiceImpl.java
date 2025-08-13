@@ -7,16 +7,22 @@ import com.codqueto.models.SoulStone;
 import com.codqueto.models.SpaceStone;
 import com.codqueto.models.Stone;
 import com.codqueto.models.TimeStone;
+import com.codqueto.utils.AvengerNotifier;
+import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.Map;
 
 @Service
@@ -38,6 +44,12 @@ public class GauntletServiceImpl implements GauntletService {
     private final Stone soulStone;
     private final Stone spaceStone;
     private final Stone timeStone;
+
+
+    @PostConstruct
+    public void init() {
+        AvengerNotifier.sendNotification(this.getClass());
+    }
 
     @Autowired
     public GauntletServiceImpl(
@@ -100,5 +112,17 @@ public class GauntletServiceImpl implements GauntletService {
                 throw new RuntimeException(e);
             }
         });
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        final var stones = applicationContext.getBeanNamesForType(Stone.class);
+
+        log.info("Beans loaded: {}", Arrays.toString(stones));
+    }
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        log.info("Gauntlet located at: {}", environment.getProperty("location"));
     }
 }

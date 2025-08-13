@@ -1,7 +1,168 @@
-2025-08-10T00:01:36.836-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-08-10T00:01:36.847-06:00  INFO 17296 --- [springboot-demo] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:01:38.855-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:01:38.855-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+2025-08-12T19:47:28.930-06:00  INFO 41549 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41549 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T19:47:28.932-06:00  INFO 41549 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T19:47:28.954-06:00  INFO 41549 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T19:47:28.954-06:00  INFO 41549 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T19:47:29.362-06:00  INFO 41549 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T19:47:29.369-06:00  INFO 41549 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T19:47:29.369-06:00  INFO 41549 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T19:47:29.385-06:00  INFO 41549 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T19:47:29.385-06:00  INFO 41549 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 431 ms
+2025-08-12T19:47:29.415-06:00  INFO 41549 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T19:47:29.418-06:00  WARN 41549 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T19:47:29.419-06:00  INFO 41549 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T19:47:29.528-06:00  INFO 41549 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T19:47:29.542-06:00  INFO 41549 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T19:47:29.547-06:00  INFO 41549 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.879 seconds (process running for 1.456)
+2025-08-12T19:53:54.379-06:00  INFO 41549 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T19:53:56.405-06:00  INFO 41549 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T19:55:52.609-06:00  INFO 41635 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41635 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T19:55:52.610-06:00  INFO 41635 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T19:55:52.633-06:00  INFO 41635 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T19:55:52.633-06:00  INFO 41635 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T19:55:53.047-06:00  INFO 41635 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T19:55:53.054-06:00  INFO 41635 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T19:55:53.054-06:00  INFO 41635 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T19:55:53.071-06:00  INFO 41635 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T19:55:53.071-06:00  INFO 41635 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 438 ms
+2025-08-12T19:55:53.103-06:00  INFO 41635 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T19:55:53.105-06:00  WARN 41635 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T19:55:53.108-06:00  WARN 41635 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T19:55:53.109-06:00  INFO 41635 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T19:55:53.241-06:00  INFO 41635 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T19:55:53.260-06:00  INFO 41635 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T19:55:53.267-06:00  INFO 41635 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.963 seconds (process running for 1.455)
+2025-08-12T19:57:15.471-06:00  INFO 41635 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T19:57:17.487-06:00  INFO 41635 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T19:57:19.624-06:00  INFO 41667 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41667 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T19:57:19.625-06:00  INFO 41667 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T19:57:19.657-06:00  INFO 41667 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T19:57:19.657-06:00  INFO 41667 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T19:57:20.115-06:00  INFO 41667 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T19:57:20.122-06:00  INFO 41667 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T19:57:20.122-06:00  INFO 41667 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T19:57:20.137-06:00  INFO 41667 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T19:57:20.137-06:00  INFO 41667 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2025-08-12T19:57:20.183-06:00  INFO 41667 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T19:57:20.186-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T19:57:20.187-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T19:57:20.187-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.RealityStone
+2025-08-12T19:57:20.188-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SoulStone
+2025-08-12T19:57:20.188-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SpaceStone
+2025-08-12T19:57:20.189-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.TimeStone
+2025-08-12T19:57:20.190-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T19:57:20.191-06:00  INFO 41667 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T19:57:20.193-06:00  WARN 41667 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T19:57:20.336-06:00  INFO 41667 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T19:57:20.355-06:00  INFO 41667 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T19:57:20.360-06:00  INFO 41667 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.94 seconds (process running for 1.314)
+2025-08-12T20:02:02.839-06:00  INFO 41667 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T20:02:04.853-06:00  INFO 41667 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T20:02:07.139-06:00  INFO 41714 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41714 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T20:02:07.139-06:00  INFO 41714 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T20:02:07.158-06:00  INFO 41714 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T20:02:07.159-06:00  INFO 41714 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T20:02:07.531-06:00  INFO 41714 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T20:02:07.538-06:00  INFO 41714 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T20:02:07.538-06:00  INFO 41714 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T20:02:07.554-06:00  INFO 41714 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T20:02:07.555-06:00  INFO 41714 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 396 ms
+2025-08-12T20:02:07.584-06:00  INFO 41714 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T20:02:07.586-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T20:02:07.587-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:02:07.587-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.RealityStone
+2025-08-12T20:02:07.587-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SoulStone
+2025-08-12T20:02:07.587-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SpaceStone
+2025-08-12T20:02:07.588-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.TimeStone
+2025-08-12T20:02:07.589-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T20:02:07.589-06:00  INFO 41714 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T20:02:07.590-06:00  WARN 41714 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:02:07.697-06:00  INFO 41714 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T20:02:07.711-06:00  INFO 41714 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T20:02:07.717-06:00  INFO 41714 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.775 seconds (process running for 1.122)
+2025-08-12T20:02:43.576-06:00  INFO 41714 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T20:02:45.591-06:00  INFO 41714 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T20:02:45.601-06:00  WARN 41714 --- [springboot-demo] [SpringApplicationShutdownHook] com.codqueto.components.Thanos           : Battle end
+2025-08-12T20:03:31.610-06:00  INFO 41730 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41730 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T20:03:31.611-06:00  INFO 41730 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T20:03:31.632-06:00  INFO 41730 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T20:03:31.632-06:00  INFO 41730 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T20:03:31.990-06:00  INFO 41730 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T20:03:31.997-06:00  INFO 41730 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T20:03:31.997-06:00  INFO 41730 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T20:03:32.013-06:00  INFO 41730 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T20:03:32.013-06:00  INFO 41730 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 381 ms
+2025-08-12T20:03:32.042-06:00  INFO 41730 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T20:03:32.044-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T20:03:32.044-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:03:32.044-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.RealityStone
+2025-08-12T20:03:32.045-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SoulStone
+2025-08-12T20:03:32.045-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SpaceStone
+2025-08-12T20:03:32.045-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.TimeStone
+2025-08-12T20:03:32.046-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T20:03:32.047-06:00  INFO 41730 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T20:03:32.048-06:00  WARN 41730 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:03:32.152-06:00  INFO 41730 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T20:03:32.166-06:00  INFO 41730 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T20:03:32.171-06:00  INFO 41730 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.759 seconds (process running for 1.074)
+2025-08-12T20:04:03.201-06:00  INFO 41730 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T20:04:05.216-06:00  INFO 41730 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T20:04:05.230-06:00  WARN 41730 --- [springboot-demo] [SpringApplicationShutdownHook] com.codqueto.components.Thanos           : Battle end
+2025-08-12T20:04:07.608-06:00  INFO 41741 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41741 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T20:04:07.609-06:00  INFO 41741 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T20:04:07.631-06:00  INFO 41741 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T20:04:07.632-06:00  INFO 41741 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T20:04:08.020-06:00  INFO 41741 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T20:04:08.027-06:00  INFO 41741 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T20:04:08.027-06:00  INFO 41741 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T20:04:08.046-06:00  INFO 41741 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T20:04:08.046-06:00  INFO 41741 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 414 ms
+2025-08-12T20:04:08.078-06:00  INFO 41741 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T20:04:08.080-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T20:04:08.080-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:04:08.080-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.RealityStone
+2025-08-12T20:04:08.081-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SoulStone
+2025-08-12T20:04:08.081-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SpaceStone
+2025-08-12T20:04:08.081-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.TimeStone
+2025-08-12T20:04:08.082-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T20:04:08.083-06:00  INFO 41741 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T20:04:08.083-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.components.Thanos
+2025-08-12T20:04:08.083-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Danger start battle!!!
+2025-08-12T20:04:08.084-06:00  WARN 41741 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:04:08.195-06:00  INFO 41741 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T20:04:08.209-06:00  INFO 41741 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T20:04:08.214-06:00  INFO 41741 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.829 seconds (process running for 1.317)
+2025-08-12T20:04:20.085-06:00  INFO 41741 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T20:04:22.100-06:00  INFO 41741 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T20:04:22.111-06:00  WARN 41741 --- [springboot-demo] [SpringApplicationShutdownHook] com.codqueto.components.Thanos           : Battle end
+2025-08-12T20:20:34.053-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41918 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T20:20:34.055-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T20:20:34.084-06:00  INFO 41918 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T20:20:34.084-06:00  INFO 41918 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T20:20:34.507-06:00  INFO 41918 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T20:20:34.516-06:00  INFO 41918 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T20:20:34.516-06:00  INFO 41918 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T20:20:34.531-06:00  INFO 41918 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T20:20:34.531-06:00  INFO 41918 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 447 ms
+2025-08-12T20:20:34.574-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T20:20:34.576-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T20:20:34.577-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:20:34.577-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.RealityStone
+2025-08-12T20:20:34.578-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SoulStone
+2025-08-12T20:20:34.578-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SpaceStone
+2025-08-12T20:20:34.578-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.TimeStone
+2025-08-12T20:20:34.579-06:00  INFO 41918 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : Beans loaded: [mind, power, reality, soul, space, time]
+2025-08-12T20:20:34.580-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T20:20:34.581-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T20:20:34.581-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.components.Thanos
+2025-08-12T20:20:34.581-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Danger start battle!!!
+2025-08-12T20:20:34.582-06:00  WARN 41918 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:20:34.709-06:00  INFO 41918 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T20:20:34.732-06:00  INFO 41918 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T20:20:34.738-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.904 seconds (process running for 1.343)
+2025-08-12T20:23:18.755-06:00  INFO 41918 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-12T20:23:18.760-06:00  INFO 41918 --- [springboot-demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T20:23:20.778-06:00  INFO 41918 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T20:23:20.778-06:00 ERROR 41918 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
 
 java.nio.channels.AsynchronousCloseException: null
 	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
@@ -12,541 +173,77 @@ java.nio.channels.AsynchronousCloseException: null
 	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
 	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
 
-2025-08-10T00:01:38.932-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:01:38.933-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:01:39.002-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:01:39.002-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:01:39.003-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:01:39.006-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:01:39.006-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 72 ms
-2025-08-10T00:01:39.013-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:01:39.031-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:01:39.036-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:01:39.038-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.123 seconds (process running for 5196.551)
-2025-08-10T00:01:39.041-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Monaco
-2025-08-10T00:01:39.041-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:01:39.041-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 263 danger points
-2025-08-10T00:01:39.041-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:02:45.088-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:02:45.094-06:00  INFO 17296 --- [springboot-demo] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:02:47.108-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:02:47.109-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:02:47.181-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:02:47.181-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:02:47.252-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:02:47.252-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:02:47.252-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:02:47.255-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:02:47.255-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 73 ms
-2025-08-10T00:02:47.261-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:02:47.278-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:02:47.283-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:02:47.285-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.114 seconds (process running for 5264.8)
-2025-08-10T00:02:47.288-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Albania
-2025-08-10T00:02:47.288-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:02:47.288-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 940 danger points
-2025-08-10T00:02:47.288-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:03:44.198-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-08-10T00:03:44.202-06:00  INFO 17296 --- [springboot-demo] [Thread-47] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:03:46.219-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:03:46.219-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:03:46.282-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:03:46.283-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:03:46.363-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:03:46.364-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:03:46.364-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:03:46.367-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:03:46.367-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 84 ms
-2025-08-10T00:03:46.376-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:03:46.401-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:03:46.410-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:03:46.413-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.143 seconds (process running for 5323.929)
-2025-08-10T00:03:46.417-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Congo, Democratic Republic of the
-2025-08-10T00:03:46.418-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:03:46.418-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 926 danger points
-2025-08-10T00:03:46.418-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:03:47.819-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:03:47.820-06:00  INFO 17296 --- [springboot-demo] [Thread-51] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:03:49.843-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:03:49.844-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:03:49.895-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:03:49.895-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:03:49.963-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:03:49.964-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:03:49.964-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:03:49.966-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:03:49.967-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 71 ms
-2025-08-10T00:03:49.973-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:03:49.995-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:03:50.002-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:03:50.003-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.119 seconds (process running for 5327.52)
-2025-08-10T00:03:50.007-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Switzerland
-2025-08-10T00:03:50.007-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:03:50.007-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 174 danger points
-2025-08-10T00:03:50.007-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:03:51.413-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:03:51.414-06:00  INFO 17296 --- [springboot-demo] [Thread-55] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:03:53.422-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:03:53.422-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:03:53.464-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:03:53.464-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:03:53.527-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:03:53.528-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:03:53.528-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:03:53.531-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:03:53.531-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 66 ms
-2025-08-10T00:03:53.537-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:03:53.556-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:03:53.561-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:03:53.563-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.108 seconds (process running for 5331.079)
-2025-08-10T00:03:53.566-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Kazakhstan
-2025-08-10T00:03:53.566-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:03:53.566-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 165 danger points
-2025-08-10T00:03:53.566-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:04:10.156-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:04:10.162-06:00  INFO 17296 --- [springboot-demo] [Thread-59] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:04:12.178-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:04:12.178-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:04:12.273-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:04:12.273-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:04:12.361-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:04:12.362-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:04:12.362-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:04:12.365-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:04:12.365-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 91 ms
-2025-08-10T00:04:12.371-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:04:12.396-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:04:12.405-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:04:12.407-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.149 seconds (process running for 5349.924)
-2025-08-10T00:04:12.411-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Uruguay
-2025-08-10T00:04:12.411-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:04:12.411-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 61 danger points
-2025-08-10T00:04:12.412-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:04:34.031-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:04:34.034-06:00  INFO 17296 --- [springboot-demo] [Thread-63] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:04:36.041-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:04:36.041-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:04:36.109-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:04:36.109-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:04:36.178-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:04:36.179-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:04:36.179-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:04:36.181-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:04:36.181-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 71 ms
-2025-08-10T00:04:36.187-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:04:36.206-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:04:36.209-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:04:36.211-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.115 seconds (process running for 5373.728)
-2025-08-10T00:04:36.213-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Malawi
-2025-08-10T00:04:36.214-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:04:36.214-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 816 danger points
-2025-08-10T00:04:36.214-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:05:24.088-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-08-10T00:05:24.090-06:00  INFO 17296 --- [springboot-demo] [Thread-67] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:05:26.098-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:05:26.099-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:05:26.168-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:05:26.168-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:05:26.236-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:05:26.236-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:05:26.237-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:05:26.239-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:05:26.239-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 71 ms
-2025-08-10T00:05:26.245-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:05:26.264-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:05:26.267-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:05:26.269-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.116 seconds (process running for 5423.787)
-2025-08-10T00:05:26.272-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Ukraine
-2025-08-10T00:05:26.272-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:05:26.272-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 485 danger points
-2025-08-10T00:05:26.272-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:05:27.682-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-08-10T00:05:27.683-06:00  INFO 17296 --- [springboot-demo] [Thread-71] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:05:29.692-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:05:29.693-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:05:29.748-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:05:29.748-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:05:29.810-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:05:29.811-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:05:29.811-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:05:29.813-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:05:29.813-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 64 ms
-2025-08-10T00:05:29.818-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:05:29.837-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:05:29.841-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:05:29.843-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.107 seconds (process running for 5427.361)
-2025-08-10T00:05:29.845-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Angola
-2025-08-10T00:05:29.845-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:05:29.845-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 162 danger points
-2025-08-10T00:05:29.846-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:05:54.484-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-08-10T00:05:54.486-06:00  INFO 17296 --- [springboot-demo] [Thread-75] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:05:56.493-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:05:56.493-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:05:56.546-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:05:56.546-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:05:56.621-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:05:56.621-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:05:56.621-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:05:56.626-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:05:56.626-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 79 ms
-2025-08-10T00:05:56.633-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:05:56.636-06:00  WARN 17296 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thanosModel' defined in file [/Users/hiram/Documents/learning/java/springboot-demo/target/classes/com/codqueto/models/ThanosModel.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-08-10T00:05:56.636-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-08-10T00:05:56.640-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2025-08-12T20:23:20.792-06:00  WARN 41918 --- [springboot-demo] [Thread-5] com.codqueto.components.Thanos           : Battle end
+2025-08-12T20:23:20.838-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41918 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T20:23:20.838-06:00  INFO 41918 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T20:23:20.855-06:00  WARN 41918 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.codqueto.services.GauntletServiceImpl]
+2025-08-12T20:23:20.856-06:00  INFO 41918 --- [springboot-demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-08-10T00:05:56.650-06:00 ERROR 17296 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2025-08-12T20:23:20.865-06:00 ERROR 41918 --- [springboot-demo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-***************************
-APPLICATION FAILED TO START
-***************************
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.codqueto.services.GauntletServiceImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.codqueto.SpringbootDemoApplication.main(SpringbootDemoApplication.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+Caused by: java.io.FileNotFoundException: class path resource [com/codqueto/services/GauntletService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281) ~[spring-context-6.2.9.jar:6.2.9]
+	... 21 common frames omitted
 
-Description:
-
-ThanosModel is annotated with @ConstructorBinding but it is defined as a regular bean which caused dependency injection to fail.
-
-Action:
-
-Update your configuration so that ThanosModel is defined via @ConfigurationPropertiesScan or @EnableConfigurationProperties.
-
-2025-08-10T00:05:58.099-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:05:58.099-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:05:58.156-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:05:58.157-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:05:58.157-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:05:58.160-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:05:58.160-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 60 ms
-2025-08-10T00:05:58.166-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:05:58.167-06:00  WARN 17296 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thanosModel' defined in file [/Users/hiram/Documents/learning/java/springboot-demo/target/classes/com/codqueto/models/ThanosModel.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-08-10T00:05:58.168-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-08-10T00:05:58.169-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-08-10T00:05:58.172-06:00 ERROR 17296 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-ThanosModel is annotated with @ConstructorBinding but it is defined as a regular bean which caused dependency injection to fail.
-
-Action:
-
-Update your configuration so that ThanosModel is defined via @ConfigurationPropertiesScan or @EnableConfigurationProperties.
-
-2025-08-10T00:06:14.852-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:06:14.853-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:06:14.968-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:06:14.968-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:06:14.968-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:06:14.975-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:06:14.975-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
-2025-08-10T00:06:14.991-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:06:14.994-06:00  WARN 17296 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thanosModel' defined in file [/Users/hiram/Documents/learning/java/springboot-demo/target/classes/com/codqueto/models/ThanosModel.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-08-10T00:06:14.994-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-08-10T00:06:14.997-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-08-10T00:06:14.998-06:00 ERROR 17296 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-ThanosModel is annotated with @ConstructorBinding but it is defined as a regular bean which caused dependency injection to fail.
-
-Action:
-
-Update your configuration so that ThanosModel is defined via @ConfigurationPropertiesScan or @EnableConfigurationProperties.
-
-2025-08-10T00:07:02.290-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:07:02.290-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:07:02.385-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:07:02.386-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:07:02.386-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:07:02.390-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:07:02.390-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 98 ms
-2025-08-10T00:07:02.395-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:07:02.397-06:00  WARN 17296 --- [springboot-demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'thanosModel' defined in file [/Users/hiram/Documents/learning/java/springboot-demo/target/classes/com/codqueto/models/ThanosModel.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-08-10T00:07:02.397-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-08-10T00:07:02.399-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-08-10T00:07:02.400-06:00 ERROR 17296 --- [springboot-demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-ThanosModel is annotated with @ConstructorBinding but it is defined as a regular bean which caused dependency injection to fail.
-
-Action:
-
-Update your configuration so that ThanosModel is defined via @ConfigurationPropertiesScan or @EnableConfigurationProperties.
-
-2025-08-10T00:08:10.464-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:08:10.464-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:08:10.563-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:08:10.565-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:08:10.565-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:08:10.571-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:08:10.571-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 105 ms
-2025-08-10T00:08:10.578-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:08:10.613-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:08:10.617-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:08:10.619-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.167 seconds (process running for 5588.141)
-2025-08-10T00:08:10.623-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Uzbekistan
-2025-08-10T00:08:10.623-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:08:10.623-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 948 danger points
-2025-08-10T00:08:10.623-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:08:12.029-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-08-10T00:08:12.031-06:00  INFO 17296 --- [springboot-demo] [Thread-79] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:08:14.042-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:08:14.043-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:08:14.120-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:08:14.120-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:08:14.187-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:08:14.187-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:08:14.187-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:08:14.190-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:08:14.190-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 69 ms
-2025-08-10T00:08:14.195-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:08:14.213-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:08:14.222-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:08:14.224-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.114 seconds (process running for 5591.746)
-2025-08-10T00:08:14.227-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Montenegro
-2025-08-10T00:08:14.227-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:08:14.228-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 31 danger points
-2025-08-10T00:08:14.228-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:08:25.718-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:08:25.723-06:00  INFO 17296 --- [springboot-demo] [Thread-95] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:08:27.734-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:08:27.734-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:08:27.799-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:08:27.799-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:08:27.873-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:08:27.873-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:08:27.873-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:08:27.876-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:08:27.876-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 76 ms
-2025-08-10T00:08:27.884-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:08:27.913-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:08:27.917-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:08:27.919-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.128 seconds (process running for 5605.441)
-2025-08-10T00:08:27.922-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Macedonia, the former Yugoslav Republic of
-2025-08-10T00:08:27.922-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:08:27.923-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 7 danger points
-2025-08-10T00:08:27.923-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:08:29.737-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:08:29.738-06:00  INFO 17296 --- [springboot-demo] [Thread-99] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:08:31.749-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:08:31.749-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:08:31.810-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:08:31.810-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:08:31.866-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:08:31.867-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:08:31.867-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:08:31.869-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:08:31.869-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 58 ms
-2025-08-10T00:08:31.878-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:08:31.898-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:08:31.902-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:08:31.903-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.104 seconds (process running for 5609.426)
-2025-08-10T00:08:31.906-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Equatorial Guinea
-2025-08-10T00:08:31.906-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:08:31.906-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 790 danger points
-2025-08-10T00:08:31.906-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:08:58.976-06:00  INFO 17296 --- [springboot-demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-08-10T00:08:58.980-06:00  INFO 17296 --- [springboot-demo] [Thread-103] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:09:00.993-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:09:00.993-06:00 ERROR 17296 --- [springboot-demo] [http-nio-9090-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
-
-java.nio.channels.AsynchronousCloseException: null
-	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:374) ~[na:na]
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-08-10T00:09:01.046-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 17296 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:09:01.046-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:09:01.140-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:09:01.140-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:09:01.140-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:09:01.144-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:09:01.144-06:00  INFO 17296 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 97 ms
-2025-08-10T00:09:01.152-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:09:01.178-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:09:01.183-06:00  INFO 17296 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:09:01.184-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.147 seconds (process running for 5638.708)
-2025-08-10T00:09:01.187-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Estonia
-2025-08-10T00:09:01.188-06:00  INFO 17296 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:09:01.188-06:00  INFO 17296 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 796 danger points
-2025-08-10T00:09:01.188-06:00  INFO 17296 --- [springboot-demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-10T00:11:52.490-06:00  INFO 17296 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:11:54.498-06:00  INFO 17296 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:11:56.642-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 20061 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:11:56.643-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:11:56.665-06:00  INFO 20061 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-10T00:11:56.665-06:00  INFO 20061 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-10T00:11:57.059-06:00  INFO 20061 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:11:57.067-06:00  INFO 20061 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:11:57.068-06:00  INFO 20061 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:11:57.083-06:00  INFO 20061 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:11:57.083-06:00  INFO 20061 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 418 ms
-2025-08-10T00:11:57.121-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:11:57.124-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=Andromeda, defaultDestructionlevel=null)
-2025-08-10T00:11:57.256-06:00  INFO 20061 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:11:57.277-06:00  INFO 20061 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:11:57.283-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.85 seconds (process running for 1.225)
-2025-08-10T00:11:57.319-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Brunei Darussalam
-2025-08-10T00:11:57.319-06:00  INFO 20061 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:11:57.319-06:00  INFO 20061 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 510 danger points
-2025-08-10T00:12:17.413-06:00  INFO 20061 --- [springboot-demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-10T00:12:19.426-06:00  INFO 20061 --- [springboot-demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-10T00:12:21.040-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 20088 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
-2025-08-10T00:12:21.040-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-08-10T00:12:21.065-06:00  INFO 20088 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-10T00:12:21.065-06:00  INFO 20088 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-10T00:12:21.434-06:00  INFO 20088 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-10T00:12:21.441-06:00  INFO 20088 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-10T00:12:21.442-06:00  INFO 20088 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-10T00:12:21.455-06:00  INFO 20088 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
-2025-08-10T00:12:21.456-06:00  INFO 20088 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 390 ms
-2025-08-10T00:12:21.493-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
-2025-08-10T00:12:21.496-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
-2025-08-10T00:12:21.606-06:00  INFO 20088 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-10T00:12:21.624-06:00  INFO 20088 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
-2025-08-10T00:12:21.630-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.887 seconds (process running for 1.264)
-2025-08-10T00:12:21.660-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thanos is using the gauntlet to perform snap in Thailand
-2025-08-10T00:12:21.660-06:00  INFO 20088 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : using all power
-2025-08-10T00:12:21.660-06:00  INFO 20088 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : Thaanos has made 697 danger points
+2025-08-12T20:24:49.349-06:00  INFO 41960 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Starting SpringbootDemoApplication using Java 24.0.1 with PID 41960 (/Users/hiram/Documents/learning/java/springboot-demo/target/classes started by hiram in /Users/hiram/Documents/learning/java/springboot-demo)
+2025-08-12T20:24:49.350-06:00  INFO 41960 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T20:24:49.373-06:00  INFO 41960 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T20:24:49.373-06:00  INFO 41960 --- [springboot-demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T20:24:49.723-06:00  INFO 41960 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-08-12T20:24:49.730-06:00  INFO 41960 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T20:24:49.730-06:00  INFO 41960 --- [springboot-demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T20:24:49.747-06:00  INFO 41960 --- [springboot-demo] [restartedMain] o.a.c.c.C.[.[localhost].[/stones]        : Initializing Spring embedded WebApplicationContext
+2025-08-12T20:24:49.747-06:00  INFO 41960 --- [springboot-demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 374 ms
+2025-08-12T20:24:49.782-06:00  INFO 41960 --- [springboot-demo] [restartedMain] com.codqueto.configs.StonesConfigs       : Loading subtitles: default.xyz profile: default
+2025-08-12T20:24:49.784-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.MindStone
+2025-08-12T20:24:49.785-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:24:49.785-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.RealityStone
+2025-08-12T20:24:49.786-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SoulStone
+2025-08-12T20:24:49.788-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.SpaceStone
+2025-08-12T20:24:49.788-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.TimeStone
+2025-08-12T20:24:49.789-06:00  INFO 41960 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : Gauntlet located at: asgard
+2025-08-12T20:24:49.790-06:00  INFO 41960 --- [springboot-demo] [restartedMain] c.codqueto.services.GauntletServiceImpl  : Beans loaded: [mind, power, reality, soul, space, time]
+2025-08-12T20:24:49.790-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.services.GauntletServiceImpl
+2025-08-12T20:24:49.794-06:00  INFO 41960 --- [springboot-demo] [restartedMain] com.codqueto.components.Thanos           : initializating thanosModel: ThanosModel(planet=Titan, galaxy=tuxtla, defaultDestructionlevel=null)
+2025-08-12T20:24:49.794-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.components.Thanos
+2025-08-12T20:24:49.794-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Danger start battle!!!
+2025-08-12T20:24:49.795-06:00  WARN 41960 --- [springboot-demo] [restartedMain] com.codqueto.utils.AvengerNotifier       : Attention new class created: com.codqueto.models.PowerStone
+2025-08-12T20:24:49.910-06:00  INFO 41960 --- [springboot-demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T20:24:49.926-06:00  INFO 41960 --- [springboot-demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/stones'
+2025-08-12T20:24:49.932-06:00  INFO 41960 --- [springboot-demo] [restartedMain] com.codqueto.SpringbootDemoApplication   : Started SpringbootDemoApplication in 0.774 seconds (process running for 1.102)

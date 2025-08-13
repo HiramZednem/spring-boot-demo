@@ -1,5 +1,6 @@
 package com.codqueto.models;
 
+import com.codqueto.utils.AvengerNotifier;
 import lombok.ToString;
 import lombok.extern.java.Log;
 

@@ -2,8 +2,10 @@ package com.codqueto.components;
 
 import com.codqueto.models.ThanosModel;
 import com.codqueto.services.GauntletService;
+import com.codqueto.utils.AvengerNotifier;
 import com.github.javafaker.Faker;
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -26,6 +28,12 @@ public class Thanos {
     @PostConstruct
     public void init() {
         log.info("initializating thanosModel: {}", this.thanosModel);
+        AvengerNotifier.sendNotification(this.getClass());
+    }
+
+    @PreDestroy
+    public void destroy() {
+       log.warn("Battle end");
     }
 
     public void snap() {

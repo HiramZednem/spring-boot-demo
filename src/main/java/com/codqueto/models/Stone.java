@@ -1,6 +1,7 @@
 package com.codqueto.models;
 
 
+import com.codqueto.utils.AvengerNotifier;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +25,9 @@ public abstract class Stone implements Serializable
 
     private static final int NUMBER_OF_SIDES = 6;
 
+    public void init() {
+        AvengerNotifier.sendNotification(this.getClass());
+    }
 
     public Stone(String color, String name, String location, Integer energyLevel) {
         this.color = color;

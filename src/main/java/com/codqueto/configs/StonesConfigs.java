@@ -44,7 +44,8 @@ public class StonesConfigs {
     public void init() {
         log.info("Loading subtitles: {} profile: {}", this.subtitleUrl, this.profile);
     }
-    @Bean("mind")
+
+    @Bean(value = "mind", initMethod = "init")
     @Scope("prototype")
     @ConditionalOnProperty(
             name = "stones.mind.create",
@@ -63,7 +64,7 @@ public class StonesConfigs {
     @Value("${stones.power.energy_level}")
     private Integer powerEnergy;
 
-    @Bean("power")
+    @Bean(value = "power", initMethod = "init")
     @Scope("prototype")
     @ConditionalOnProperty(
             name = "stones.power.create",
@@ -82,7 +83,7 @@ public class StonesConfigs {
     @Value("${stones.reality.energy_level}")
     private Integer realityEnergy;
 
-    @Bean("reality")
+    @Bean(value = "reality", initMethod = "init")
     @Scope("prototype")
     @ConditionalOnProperty(
             name = "stones.reality.create",
@@ -101,7 +102,7 @@ public class StonesConfigs {
     @Value("${stones.soul.energy_level}")
     private Integer soulEnergy;
 
-    @Bean("soul")
+    @Bean(value = "soul", initMethod = "init")
     @Scope("prototype")
     @ConditionalOnProperty(
             name = "stones.soul.create",
@@ -120,7 +121,7 @@ public class StonesConfigs {
     @Value("${stones.space.energy_level}")
     private Integer spaceEnergy;
 
-    @Bean("space")
+    @Bean(value = "space", initMethod = "init")
     @Scope("prototype")
     @ConditionalOnProperty(
             name = "stones.space.create",
@@ -139,7 +140,7 @@ public class StonesConfigs {
     @Value("${stones.time.energy_level}")
     private Integer timeEnergy;
 
-    @Bean("time")
+    @Bean(value = "time", initMethod = "init")
     @Scope("prototype")
     @ConditionalOnProperty(
             name = "stones.time.create",

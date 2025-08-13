@@ -15,23 +15,24 @@ import org.springframework.context.annotation.PropertySource;
 @SpringBootApplication
 public class SpringbootDemoApplication implements CommandLineRunner {
 
-	@Autowired
-	private Thanos thanos;
+//	@Autowired
+//	private Thanos thanos;
+//
+//	@Value(value="${spring.not.found:default-value}")
+//	private String value;
+//
+//	@Autowired
+//	@Qualifier(value="power")
+//	private Stone powerStone;
+//
+//	@Autowired
+//	@Qualifier(value="mind")
+//	private Stone mindStone;
+//
+//	@Autowired
+//	@Qualifier(value="reality")
+//	private Stone realityStone;
 
-	@Value(value="${spring.not.found:default-value}")
-	private String value;
-
-	@Autowired
-	@Qualifier(value="power")
-	private Stone powerStone;
-
-	@Autowired
-	@Qualifier(value="mind")
-	private Stone mindStone;
-
-	@Autowired
-	@Qualifier(value="reality")
-	private Stone realityStone;
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootDemoApplication.class, args);
 	}
@@ -41,6 +42,6 @@ public class SpringbootDemoApplication implements CommandLineRunner {
 //		System.out.println(powerStone);
 //		System.out.println(mindStone);
 //		System.out.println(realityStone);
-		thanos.snap();
+//		thanos.snap();
 	}
 }
